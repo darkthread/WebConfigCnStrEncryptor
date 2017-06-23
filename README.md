@@ -6,7 +6,7 @@ Introduction
 ====
 Since ASP.NET 2.0, web.cofig adds connectionStrings section to store database connection string and provides encryption function to secure the sensitive information (like database account and password).  For example:
 
-````
+````xml
 <connectionStrings>
 <add name="PlaygroundConnectionString" connectionString="Data Source=(local);Initial Catalog=Playground;Integrated Security=True" providerName="System.Data.SqlClient" />
 </connectionStrings>
@@ -14,7 +14,7 @@ Since ASP.NET 2.0, web.cofig adds connectionStrings section to store database co
 
 Will be encrypted as:
 
-````
+````xml
 <EncryptedData Type="http://www.w3.org/2001/04/xmlenc#Element"
   xmlns="http://www.w3.org/2001/04/xmlenc#">
   <EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc" />
@@ -49,7 +49,7 @@ But the only way to encrypt and decrypt web.config is to use aspnet_regiis.exe c
 4. Execute **aspnet_regiis -pi "SharedKeys" keys.xml** to import RSA key container on 3 web farm servers.
 5. Execute **aspnet_regiis -pa "SharedKeys" "NT AUTHORITY\NETWORK SERVICE"** to grant access permission to ASP.NET web application.  (Note: IIS 7.5 uses IIS APPPOOL\YourAppPoolName as identity, please replace NT AUTHORITY\NETWORK SERVICE to appropriate account. [reference])
 In web.config, add:
-````
+````xml
 <configProtectedData>
 <providers>
   <add keyContainerName="SharedKeys" useMachineContainer="true"
