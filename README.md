@@ -66,18 +66,17 @@ It's a handy tool to provide GUI to cover the operations that aspnet_regiis.exe 
 
 The UI is straight forward ( I hope so ;P ), you can choose the web application from the dropdownlist, and then the web.config will show in the viewer, the [Edit] button can startup Notepad to edit the web.config.  If the web.config connectionStrings section is not encrypted, you can click [Encrypt] to encrypt it;  if it's encrypted, the [Encrypt] button will becomes [Decrypt], you can decrypt it by one click, too.
 
-![Fig1](http://www.darkthread.net/photos/0972-7132-o.gif)
+![Fig1](https://github.com/darkthread/WebConfigCnStrEncryptor/blob/master/Fig1.gif?raw=true)
 
-![Fig2](http://www.darkthread.net/photos/0973-967e-o.gif)
+![Fig2](https://github.com/darkthread/WebConfigCnStrEncryptor/blob/master/Fig2.gif?raw=true)
 
 The RSA Key Container Management UI can be used to create, delete, export and import key containers.
 
-![Fig3](http://www.darkthread.net/photos/0974-b009-o.gif)
+![Fig3](https://github.com/darkthread/WebConfigCnStrEncryptor/blob/master/Fig3.gif?raw=true)
 
 The tool provides English and Traditional-Chinese (Taiwan) multi-language support so far.
 
-![Fig4](http://www.darkthread.net/photos/0975-3613-o.gif)
-
+![Fig4](https://github.com/darkthread/WebConfigCnStrEncryptor/blob/master/Fig4.gif?raw=true)
 
 Here are operation samples for some typical scenarios:
 
